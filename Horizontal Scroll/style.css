@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: "Work Sans";
+    font-weight: 200;
+  color:black;
+    text-transform:uppercase;
+
+}
+
+
+
+#bg1 {
+ background:url('https://wallpaperset.com/w/full/d/0/e/60676.jpg');
+ background-size:cover;
+ background-position:center;
+ color:black;
+}
+
+
+
+
+
+#scroll-wrapper {
+    height: 100%;
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    user-select: none;
+    cursor: grab;
+}
+.scroll .scroll-content {
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    height: 100vh;
+}
+.scroll .scroll-content .slide {
+    display: flex;
+    height: 100%;
+    min-width: calc(75vw - 60px);
+}
+.scroll .scroll-content .slide__inner {
+    position: relative;
+    padding: 8vh;
+    width: 100%;
+    height: 100%;
+    font-size: calc(40px + 1vw);
+    flex-direction: column;
+}
+.scroll .scroll-content .slide--1 {
+    min-width: calc(100vw - 60px);
+}
+.scroll .scroll-content .slide--1 .slide__inner {
+    align-items: center;
+    justify-content: center;
+}
+.scroll .scroll-content .slide--1 .slide__inner h1 {
+    font-size: 70px;
+    font-weight: 100;
+    margin-top: 8vh;
+}
+.scroll .scroll-content .slide--2 {
+    align-items: center;
+    background-color: #ea5b0c;
+}
+.scroll .scroll-content .slide--3 {
+    align-items: flex-end;
+}
+.scroll .scroll-content .slide--4 {
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+.scroll .scroll-content .slide--5 {
+    align-items: flex-start;
+}
+.scroll .scroll-content .slide--6 {
+    align-items: center;
+    background-color: #ea5b0c;
+    color: black;
+}
+.scroll .scroll-content .slide:last-child {
+    width: 65vw;
+    padding-right: 15vw;
+}
+.scrollbar {
+    position: absolute;
+    bottom: 8vh;
+    left: 8vh;
+    right: 8vh;
+    height: 1px;
+    background-color:black;
+}
+.scrollbar__handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color:whitesmoke;
+}
